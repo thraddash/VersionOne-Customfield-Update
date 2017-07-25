@@ -1,0 +1,15 @@
+token_id: InsertYourBearerTokenID
+base_url: https://www17.v1host.com_update_v1hostSite
+base_uri: /InsertCompanyName
+defect_uri: /rest-1.v1/Data/Defect
+
+defectSelection: ?sel=Number,Custom_Channel2.Name,AssetState&where=AssetState='64';Custom_Channel2.Name='';AssetState!='Deleted'
+defectMulti: ?sel=Number,Custom_Channel2.Name,AssetState&where=AssetState='64';AssetState!='Deleted'
+comment: ?Comment=Updated+Required+field+to+SELECT+CHANNEL
+
+#log: /tmp/channel_log
+
+#FOR single Defect TESTING
+#defectSelectiont: ?sel=Number,Custom_Channel2.Name,AssetState&where=AssetState='64';AssetState!='Deleted';Number='D-55109'
+#defectMulti: ?sel=Number,Custom_Channel2.Name,AssetState&where=AssetState='64';AssetState!='Deleted'
+#defectSelectionTest: ?sel=Number,Custom_Channel2.Name,AssetState&where=AssetState='64';Custom_Channel2.Name='';AssetState!='Deleted'&page=5,1
